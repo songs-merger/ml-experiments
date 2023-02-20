@@ -1,0 +1,12 @@
+numpy
+pandas
+scipy
+scikit-learn
+tensorflow
+keras
+matplotlib
+seaborn
+librosa==0.8.0
+spleeter
+pytorch
+
