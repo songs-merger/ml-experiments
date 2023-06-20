@@ -21,11 +21,14 @@ def combine_tracks(vocal_waveform, accom_waveform, sample_rate=22050, hop_length
         return time_per_beat_to / time_per_beat_from
 
     mult = calc_stretch(beat_samples_vocals, beat_samples_accom)
+    while mult > 1.8:
+        mult /= 2
+    print(mult)
     accom_spedup = librosa.effects.time_stretch(accom, mult)
 
     tempo_accom_spedup, beat_samples_accom_spedup = librosa.beat.beat_track(y=accom_spedup, sr=sample_rate, hop_length=hop_length, start_bpm=tempo_vocals, units='samples')
 
-    shift = beat_samples_vocals[1] - beat_samples_accom_spedup[0]
+    shift = beat_samples_vocals[0] - beat_samples_accom_spedup[0]
     if shift >= 0:
         vocals_spedup_shifted = vocals[shift:]
         accom_spedup_shifted = accom_spedup
