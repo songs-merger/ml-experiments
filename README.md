@@ -14,6 +14,7 @@ Each sound at a given instant can be represented as a sum of various frequencies
 Spleeter is powered by U-net, an encoder-decoder architecture that employs convolutional neural networks instead of fully connected layers. We use transposed filters for upscaling, and the model incorporates several other strategies, such as skip connections from encoder outputs to the decoder, batch normalization in the encoder, 0.5 dropout in the decoder, and the use of LeakyReLU and ELU instead of ReLUs. Spleeter consists of 12 layers in total (6 in the encoder, 6 in the decoder).
 Source code: https://github.com/deezer/spleeter/blob/master/spleeter/model/functions/unet.py
 Here's a diagram to give you an intuition of how U-net works:
+
 ![image](https://github.com/songs-merger/ml-experiments/assets/78561567/8926c0d9-4c0f-42f8-a27d-8a7f9dfc9c01)
 
 ## Loudness Normalization
