@@ -2,6 +2,8 @@
 
 Take a look at main.ipynb!
 
+[Crazy stuff 😂😂😂](https://drive.google.com/drive/folders/1qT_LYAhEFsYtYO2LZs5oxVIHGcDWFwfM?usp=sharing)
+
 ## Project Overview
 The objective of our project was to extract vocals from one song and accompaniment from another, and then merge the two. Future improvements might include pitch tuning and denoising. The project primarily leverages a pre-trained Spleeter model by Deezer, with additional operations performed using the powerful audio manipulation library, Librosa.
 
