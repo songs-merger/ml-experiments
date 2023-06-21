@@ -1,1 +1,7 @@
 .ipynb_checkpoints/*
+.DS_Store
+den/.ipynb_checkpoints/
+den/data/MNIST/raw/
+den/songs/*.mp3
+den/songs/*.m4a
+
